@@ -18,8 +18,8 @@ use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {
-
-    /**
+	  
+	  /**
      * @throws BindingResolutionException
      */
     public function register(Request $request): \Illuminate\Http\JsonResponse
@@ -205,13 +205,6 @@ class AuthController extends Controller
             return responseJson(405, 'this code is expired');
         }
     }
-
-
-
-
-
-
-
 
     public function forgetPassword(Request $request) //name
     {
